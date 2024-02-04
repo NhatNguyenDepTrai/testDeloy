@@ -1,0 +1,35 @@
+{
+  "name": "Vinawebapp.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.5",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/seo": "^2.0.0-rc.5",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@nuxtjs/turnstile": "^0.6.3",
+    "nuxt": "^3.8.2",
+    "nuxt-calendly": "^0.1.18",
+    "nuxt-icon": "^0.6.8",
+    "sass": "^1.69.7",
+    "vue": "^3.3.12",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.6.4",
+    "@nuxt/ui": "^2.12.0",
+    "axios": "^1.6.3",
+    "nuxt-swiper": "^1.2.2"
+  }
+}
