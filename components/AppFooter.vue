@@ -37,7 +37,7 @@ const { data, pending } = useFetch(config.public.apiBase + '/' + 'get-list-categ
      </div>
      <div class="lg:col-span-4 col-span-12 lg:order-2 order-1">
       <div class="flex items-center justify-center">
-       <img :src="props.companyData.url_avatar_full" :alt="props.companyData.name" width="200px">
+       <img :src="props.companyData.url_avatar_full" :alt="props.companyData.name" width="200" loading="lazy">
       </div>
      </div>
      <div class="lg:col-span-4 col-span-12 lg:order-13 order-3">

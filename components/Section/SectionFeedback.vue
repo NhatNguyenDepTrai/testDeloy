@@ -23,7 +23,7 @@
                   <p class="text-base">“{{ item.feedback_content }}”</p>
                 </div>
                 <div class="sm:my-10 my-5 text-center">
-                  <img src="~assets/img/stars.svg" width="128" height="22" alt="5-star rating" class=" inline-block">
+                  <img loading="lazy" src="~assets/img/stars.svg" width="128" height="22" alt="5-star rating" class=" inline-block">
                 </div>
                 <div class="text-blue-500 text-center uppercase text-lg">{{ item.feedback_name }}y</div>
               </div>

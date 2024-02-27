@@ -52,7 +52,7 @@ import 'swiper/css';
 
                <swiper-slide v-for="item, index in dataPartner.data.value">
                   <nuxt-link :to="item.link" class=" w-full flex justify-center  items-center filter grayscale hover:grayscale-0 cursor-pointer">
-                     <img :src="item.url_avatar" :key="index" class="h-20 w-auto  " :alt="'Vinawebapp.com - ' + item.name">
+                     <img loading="lazy" :src="item.url_avatar" :key="index" class="h-20 w-auto  " :alt="'Vinawebapp.com - ' + item.name">
                   </nuxt-link>
                </swiper-slide>
 

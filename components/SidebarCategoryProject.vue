@@ -13,7 +13,7 @@ const isMenuCategoryProject = ref(false);
     Các ngành nghề
    </div>
    <div class="relative">
-    <div :class="{ 'shadow ring-2 ring-purple-500 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-900': isMenuCategoryProject }" class="mb-3  bg-black/80  text-2xl px-5 py-2  text-white/80   border-solid border-2 border-black  rounded border-fuchsia-800  flex items-center justify-between sm:hidden" @click="isMenuCategoryProject = !isMenuCategoryProject">
+    <div :class="{ 'shadow ring-2 ring-purple-500 ring-offset-4 ring-offset-slate-50 dark:ring-offset-slate-900': isMenuCategoryProject }" class="mb-3  bg-black/80  text-lg px-5 py-2  text-white/80   border-solid border-2 border-black  rounded border-fuchsia-800  flex items-center justify-between sm:hidden" @click="isMenuCategoryProject = !isMenuCategoryProject">
      Các Ngành Nghề
      <Icon name="fa6-solid:chevron-down" :class="{ 'text-purple-600': isMenuCategoryProject }" />
     </div>

@@ -6,8 +6,8 @@
         <div class=" col-span-3 ">
           <div class="logo flex items-center justify-start" v-if="companyData.data.value">
             <NuxtLink to="/" class="truncate">
-              <img :src="companyData.data.value.url_avatar_full" :alt="companyData.data.value.short_name" class="hidden xl:block  h-full w-auto ">
-              <img :src="companyData.data.value.url_avatar_icon" :alt="companyData.data.value.short_name" class="block  xl:hidden   h-full w-auto ">
+              <img loading="lazy" :src="companyData.data.value.url_avatar_full" :alt="companyData.data.value.short_name" class="hidden xl:block  h-full w-auto ">
+              <img loading="lazy" :src="companyData.data.value.url_avatar_icon" :alt="companyData.data.value.short_name" class="block  xl:hidden   h-full w-auto ">
             </NuxtLink>
           </div>
         </div>

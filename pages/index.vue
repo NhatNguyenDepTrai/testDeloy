@@ -38,7 +38,9 @@ onMounted(async () => {
 
 <template>
  <div>
-  <client-only>
+  <Sorry v-if="!companyData" />
+
+  <client-only v-else>
    <SectionBanner v-if="companyData" :sectionData="companyData" />
    <SectionPartner />
    <SectionTopProject />

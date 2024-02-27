@@ -24,7 +24,7 @@
          <div class="relative">
           <div class="animate-glow absolute bg-blue-500/40 top-10 right-0 left-0 w-32 h-32  "> </div>
 
-          <img src="~/assets/img/default.png" :srcset="item.url_avatar + ' 768w,' + item.url_avatar_mobile + ' 1200w,'" sizes="(min-width:768px) 365px, 100vw" width="128" height="22" alt="vinawebapp.com process item" class=" inline-block">
+          <img loading="lazy" src="~/assets/img/default.png" :srcset="item.url_avatar + ' 768w,' + item.url_avatar_mobile + ' 1200w,'" sizes="(min-width:768px) 365px, 100vw" width="128" height="22" alt="vinawebapp.com process item" class=" inline-block">
          </div>
         </div>
         <div class="text-white/90 font-bold text-center uppercase text-2xl mb-5">{{ index + 1 }}. {{ item.name }}</div>

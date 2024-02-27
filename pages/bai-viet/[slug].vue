@@ -37,7 +37,7 @@ if (data.value) {
     <SectionPageBanner v-if="data.data" :page_name="'Bài Viết'" :title="data.data.name" :desc="data.data.desc" :url_bg="data.data.url_bg" />
     <div class="page-padding  w-full ">
      <div class="p-5 text-black bg-white border border-solid border-purple-600 relative ck-content">
-      <div v-html="data.data.content"></div>
+      <div v-if="data.data.content" v-html="data.data.content"></div>
       <UDivider :avatar="{ src: '/favicon.png' }" class="mt-10" />
       <div class="mt-5 py-3 flex items-center justify-between">
        <div @click="$router.back()">

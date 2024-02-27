@@ -18,7 +18,7 @@ const props = defineProps({
 <template>
   <div>
     <div class="process">
-      <img src="/process_bg.jpg" class="w-full h-auto opacity-25 absolute -top-20 -z-10" alt="Vinawebapp.com">
+      <img loading="lazy" src="/process_bg.jpg" class="w-full h-auto opacity-25 absolute -top-20 -z-10" alt="Vinawebapp.com">
       <div class=" w-full   py-3 pt-10">
         <div class="section-sub-text color-blue text-center  md:mb-5 mb-3">Quy trình</div>
         <div class="  text-center section-text ">Quá trình phát triển dự án của chúng tôi</div>

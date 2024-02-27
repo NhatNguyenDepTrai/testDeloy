@@ -4,7 +4,7 @@
    <div id="earth"></div>
   </div>
   <div v-if="companyData" class="absolute   -right-20  lg:inset-y-1/2 top-1/4 ">
-   <img class="animate-bounce md:w-52 w-32" :src="companyData.url_avatar_icon" :alt="companyData.name">
+   <img loading="lazy" class="animate-bounce md:w-52 w-32" :src="companyData.url_avatar_icon" :alt="companyData.name">
   </div>
   <div class=" w-full page-padding  py-3 pt-20">
    <div class="  text-center section-text uppercase">Sẵn sàng bắt đầu hành trình của bạn? </div>

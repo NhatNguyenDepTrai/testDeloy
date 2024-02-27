@@ -26,8 +26,8 @@ const dataTopProject = await useFetch(config.public.apiBase + '/' + 'get-data-to
       <div class="xl:col-span-8 col-span-12 relative">
 
         <div class="grid grid-cols-12 gap-4 w-full">
-          <div v-for="item, index in dataTopProject.data.value" :class="{ 'lg:col-span-12': index === 0, 'lg:col-span-6': index !== 0 }" class=" col-span-12 mb-3 ">
-            <nuxt-link to="/du-an" class="block h-full  bg-card2 rounded-2xl opacity-[85%] hover:opacity-100 cursor-pointer p-4">
+          <div v-for="(item, index) in dataTopProject.data.value" :class="{ 'lg:col-span-12': index === 0, 'lg:col-span-6': index !== 0 }" class=" col-span-12 mb-3 ">
+            <nuxt-link :to="'/du-an/' + item.slug" class="block h-full  bg-card2 rounded-2xl opacity-[85%] hover:opacity-100 cursor-pointer p-4">
               <div class="grid grid-cols-12 gap-4 flex">
                 <div :class="{ 'lg:col-span-6 lg:pr-20': index === 0, 'lg:col-span-12': index !== 0 }" class=" col-span-12 ">
                   <div class="lg:py-5 md:pr-3">

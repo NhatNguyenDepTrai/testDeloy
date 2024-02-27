@@ -19,7 +19,7 @@ const props = defineProps({
 <template>
   <div>
     <div class="process">
-      <img src="~assets/img/bgAbout.jpeg" class="w-full h-auto opacity-25 absolute -top-20 -z-10" alt="Vinawebapp.com">
+      <img loading="lazy" src="~assets/img/bgAbout.jpeg" class="w-full h-auto opacity-25 absolute -top-20 -z-10" alt="Vinawebapp.com">
       <div class=" w-full page-padding  py-3 pt-10">
         <div class="section-sub-text color-blue text-center  md:mb-5 mb-3">Về chúng tôi</div>
         <div class="  text-center section-text "> Công ty thiết kế website chuyên nghiệp của bạn</div>
@@ -212,7 +212,7 @@ const props = defineProps({
           <div class="w-full grid grid-cols-12 gap-4 bg-short-about   rounded-lg border-white/10 border-2">
             <div class="lg:col-span-6 col-span-12 lg:order-2">
               <div class="p-5">
-                <img src="~assets/img/bgAbout.png" width="1000" height="1500" class="h-auto w-full" alt="Vinawebapp.com">
+                <img loading="lazy" src="~assets/img/bgAbout.png" width="1000" height="1500" class="h-auto w-full" alt="Vinawebapp.com">
               </div>
             </div>
 

@@ -37,7 +37,7 @@ onBeforeUnmount(() => {
 <template>
  <div id="scollToTop" :class="{ 'left-5': showButton, '-left-full': !showButton }" class="fixed z-auto bottom-10 transition-all rounded-full text-white  font-bold sm:text-xl text-base  " @click="scrollToTop">
   <div class="relative  flex items-center justify-center ">
-   <img src="~/assets/img/scrollToTopBg.png" :style="{ transform: `rotate(${scrollRotate}turn)` }" width="100" height="100" alt="Vinawebapp.com" class="absolute top-0 right-0">
+   <img loading="lazy" src="~/assets/img/scrollToTopBg.png" :style="{ transform: `rotate(${scrollRotate}turn)` }" width="100" height="100" alt="Vinawebapp.com" class="absolute top-0 right-0">
    <span> {{ scrollPercent }}%</span>
 
   </div>

@@ -37,7 +37,7 @@ const { pending, data } = useFetch(`${config.public.apiBase}/get-project-${route
           <p class="text-base">“{{ data.data.feedback_content }}”</p>
          </div>
          <div class="sm:my-10 my-5 text-center">
-          <img src="~assets/img/stars.svg" width="128" height="22" alt="5-star rating" class=" inline-block">
+          <img loading="lazy" src="~assets/img/stars.svg" width="128" height="22" alt="5-star rating" class=" inline-block">
          </div>
          <div class="text-white/90 text-center uppercase text-lg">{{ data.data.feedback_name }}y</div>
         </div>

@@ -183,6 +183,39 @@
     font-size: 1rem !important;
 }
 
+@media (max-width: 640px) {
+    .ck-content h1 {
+        font-size: 18px !important;
+    }
+
+    .ck-content h2 {
+        font-size: 17px !important;
+    }
+
+    .ck-content h3 {
+        font-size: 16px !important;
+    }
+
+    .ck-content h4 {
+        font-size: 15px !important;
+    }
+
+    .ck-content h5, .ck-content p, .ck-content span {
+        font-size: 14px !important;
+    }
+
+    .ck-content .text-big {
+        font-size: 1.2rem !important;
+
+    }
+
+    .ck-content li::marker {
+        font-size: 14px !important;
+
+    }
+}
+
+
 .ck-content strong {
     font-weight: bolder;
 }
