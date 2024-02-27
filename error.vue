@@ -13,8 +13,8 @@ useHead({
     { property: 'og:title', content: 'Vinawebapp.com - Thiết Kế Website Chuyên Nghiệp' },
     { name: 'description', content: 'Một Công Ty Thiết Kế Website Đi Trước Thời Đại Nhiều Năm Ánh Sáng' },
     { name: 'ogDescription', content: 'Một Công Ty Thiết Kế Website Đi Trước Thời Đại Nhiều Năm Ánh Sáng' },
-    { name: 'image', content: '/meta_image.png' },
-    { name: 'ogImage', content: '/meta_image.png' },
+    { name: 'image', content: '/https://www.vinawebapp.com/meta_image.png' },
+    { name: 'ogImage', content: '/https://www.vinawebapp.com/meta_image.png' },
     { name: 'keywords', content: 'thiết kế web, web, 3d, công nghệ, thiết kế webiste, website, vinawebapp.com, vinawebapp' },
     { name: 'twitterCard', content: 'summary_large_image' },
 

@@ -12,8 +12,8 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Vinawebapp.com - Thiết Kế Website Chuyên Nghiệp' },
         { property: 'description', content: 'Một Công Ty Thiết Kế Website Đi Trước Thời Đại Nhiều Năm Ánh Sáng' },
         { property: 'og:description', content: 'Một Công Ty Thiết Kế Website Đi Trước Thời Đại Nhiều Năm Ánh Sáng' },
-        { property: 'image', content: '@/assets/img/meta_image.png' },
-        { property: 'og:image', content: '@/assets/img/meta_image.png' },
+        { property: 'image', content: '@/assets/img/https://www.vinawebapp.com/meta_image.png' },
+        { property: 'og:image', content: '@/assets/img/https://www.vinawebapp.com/meta_image.png' },
         { property: 'keywords', content: 'thiết kế web, web, 3d, công nghệ, thiết kế webiste, website, vinawebapp.com, vinawebapp' },
         { property: 'twitterCard', content: 'summary_large_image' },
 
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@nuxt/ui',
     "nuxt-calendly",
-
+    '@nuxtjs/seo'
   ],
   calendly: {
     isEnabled: true,
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
       secretKey: '0x4AAAAAAAPzLkJj9f6fxZehI510ELJnVMQ',
     },
     public: {
-      apiBase: 'https://api.vinawebapp.com/api',
+      apiBase: 'http://api.vnwa.demo/api',
       site: {
         appName: 'Vinawebapp.com',
         description: 'Thiết kế website chuyên nghiệp hàng đầu Việt Nam',

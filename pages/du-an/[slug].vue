@@ -1,29 +1,12 @@
 <script setup>
-import SectionPageBanner from '~/components/Section/SectionPageBanner.vue';
-import SectionFooterTop from '~/components/Section/SectionFooterTop.vue';
+const props = defineProps({
+ companyData: Object,
+});
 const route = useRoute();
 const config = useRuntimeConfig();
 const { pending, data } = useFetch(`${config.public.apiBase}/get-project-${route.params.slug}`, {
  lazy: true
 });
-const props = defineProps({
- companyData: Object,
-});
-if (data.value) {
- useHead({
-  title: data.value.data.name + ' ',
-  meta: [
-   { name: 'title', content: data.value.data.meta_title },
-   { property: 'og:title', content: data.value.data.meta_title },
-   { name: 'description', content: data.value.data.desc },
-   { name: 'og:description', content: data.value.data.meta_desc },
-   { name: 'image', content: data.value.data.meta_image },
-   { name: 'ogImage', content: data.value.data.meta_image },
-  ],
-
- });
-}
-
 </script>
 <template>
  <div>
@@ -32,6 +15,12 @@ if (data.value) {
    <Sorry />
   </div>
   <div v-else>
+   <Title>{{ data.data.name }}</Title>
+   <Meta name="title" :content="data.data.meta_title" />
+   <Meta name="og:title" :content="data.data.meta_title" />
+   <Meta name="og:description" :content="data.data.meta_desc" />
+   <Meta name="description" :content="data.data.meta_desc" />
+
    <div v-if="data">
     <SectionPageBanner v-if="data.data" :page_name="'Dự án'" :title="data.data.name" :desc="data.data.desc" :url_bg="data.data.url_bg" />
     <div class="page-padding  w-full ">
@@ -66,10 +55,4 @@ if (data.value) {
  </div>
 </template>
 
-<style  scoped>
-/*
- * CKEditor 5 (v40.2.0) content styles.
- * Generated on Tue, 09 Jan 2024 14:48:01 GMT.
- * For more information, check out https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/content-styles.html
- */
-</style>
+<style  scoped></style>

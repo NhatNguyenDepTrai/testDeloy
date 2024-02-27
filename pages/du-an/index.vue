@@ -64,7 +64,14 @@ export default {
    page.value = route.query.page;
   }
 
-
+  useSeoMeta({
+   title: 'Dự án',
+   ogTitle: 'Dự án',
+   description: 'Danh sách dự án của chúng tôi',
+   ogDescription: 'Danh sách dự án của chúng tôi',
+   ogImage: 'http://vnwa.vinawebapp.demo//uploads/images/Company/vnwaLogoIcon.png',
+   twitterCard: 'summary_large_image',
+  })
 
   getDataProject(page.value);
   function refresh(pageNumber) {
